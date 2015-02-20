@@ -7,4 +7,4 @@ This app provides a searchable table of comments and attachments ordered by date
 ### Screenshot(s):
 
 ![Imgur](http://i.imgur.com/ZYaQftE.png)
-![Screenshot](http://i.imgur.com/Jjar7wd.png)
+![Screenshot](http://i.imgur.com/hmIdYaz.png)
