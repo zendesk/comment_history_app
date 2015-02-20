@@ -1,0 +1,37 @@
+	<div id="table_box">
+	<table id="history_table">
+		<thead>
+			<tr>
+				<th><i class="icon-user"></th>
+				<th><i class="icon-calendar"></th> 
+				<th><i class="icon-file"></th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#data}}
+		{{#if private}}
+			<tr class ="private">
+		{{else}}
+			<tr>
+		{{/if}}
+				<td class="userCell"><a class="toolt" href="/agent/users/{{author_id}}" data-toggle="tooltip" data-placement="left" data-title="{{comment}}">{{username}}</a></td>
+				<td class="dateCell">{{date}}</td>
+				<td class="attachmentCell">
+				{{#if hasMore}}
+				<button class="show-more">+</button>
+				<div class="content hideContent">
+				{{else}}
+				<div class="single">
+				{{/if}}
+				<ul>
+				{{#attachments}}
+					<li><a href="{{content_url}}" class="attachmentLink" data_content_type="{{content_type}}">{{short_name}}</a></li>
+				{{/attachments}}
+				</ul>
+				</div>
+				</td>
+			</tr>
+		{{/data}}
+		</tbody>
+	</table>
+	</div>

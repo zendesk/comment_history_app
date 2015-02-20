@@ -1,0 +1,60 @@
+<div id="container">
+	<div id="search">
+		<input type="text" id="search_input" class="search form-control" placeholder="Search Comments"/>
+	</div>
+	<div id="table_box">
+	<table id="history_table">
+		<thead>
+			<tr>
+				<th><i class="icon-user"></th>
+				<th><i class="icon-calendar"></th> 
+				<th><i class="icon-file"></th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#data}}
+		{{#if private}}
+			<tr class ="private">
+		{{else}}
+			<tr>
+		{{/if}}
+				<td class="userCell"><a class="toolt" href="/agent/users/{{author_id}}" data-toggle="tooltip" data-placement="left" data-title="{{comment}}">{{username}}</a></td>
+				<td class="dateCell">{{date}}</td>
+				<td class="attachmentCell">
+				{{#if hasMore}}
+				<button class="show-more">+</button>
+				<div class="content hideContent">
+				{{else}}
+				<div class="single">
+				{{/if}}
+				<ul>
+				{{#attachments}}
+					<li><a href="{{content_url}}" class="attachmentLink" data_content_type="{{content_type}}">{{short_name}}</a></li>
+				{{/attachments}}
+				</ul>
+				</div>
+				</td>
+			</tr>
+		{{/data}}
+		</tbody>
+	</table>
+	</div>
+	{{#if allBtn}}
+	<button id="table_toggle" class="show-table">Show All</button>
+	{{/if}}
+</div>
+
+<!-- modal.hdbs -->
+<div id="attachModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Attachment Information</h3>
+  </div>
+  <div class="modal-body">
+    <div id="imageBox"></div>
+  </div>
+  <div class="modal-footer">
+		<a class='btn dlbtn' id="downloadFile">Download</a>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+table#history_table {
+	width: 100%;
+	border-collapse: separate;
+	text-align: center;
+	border-left: 1px solid #efefef;	
+	border-right: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+	clear: both;
+}
+
+table#history_table tbody tr:nth-child(1n+6) {
+	display:none;
+}
+
+table#history_table tr td {
+	border-bottom: 1px solid #efefef;
+	padding: 2px;
+	overflow: hidden;
+	height: 20px;
+}
+
+table#history_table thead tr th {
+	border-bottom: 1px solid #efefef;
+	padding: 4px;
+	border-left: 1px solid #efefef;
+}
+table#history_table thead tr th:first-child {
+	border-left: none;
+}
+table#history_table thead tr {
+	background: #f1f1f1;
+}
+
+tr td.attachmentCell {
+	border-left: 1px solid #efefef;
+	text-align: left;
+}
+tr td.attachmentCell ul {
+	margin-left: 5px;
+}
+
+tr td.attachmentCell li {
+	text-indent: none;
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+tr td.dateCell {
+	border-left: 1px solid #efefef;
+	width: 25%;
+}
+
+tr td.userCell {
+	width: 25%;
+}
+
+#search label, #search input {
+	display: inline-block;
+	
+}
+
+#search label {
+	font-size: 120%;
+	vertical-align: -5px;
+}
+
+#search {
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 0;
+	padding-left: 5px;
+}
+
+input#search_input {
+	text-align: left;
+	font-size: 100%;
+	width: 95%;
+	height: 12px;
+}
+
+footer.foot {
+	border: none;
+}
+
+button#table_toggle {
+	margin: 10px 0 10px 0;
+	border-radius: 4px;
+	background: #78A300;
+	color: #ececec;
+	padding: 10px;
+	width: 100%;
+}
+
+div#imageBox {
+	text-align: center;
+}
+
+.modal-header {
+	text-align: center;
+}
+
+p.no-pre {
+	text-align: center;
+	width: 100%;
+	font-size: 115%;
+	margin-top: 25px;
+}
+
+a.dlbtn {
+	float: left;
+}
+
+.hideContent {
+  overflow: hidden;
+  height: 15px;
+  display: inline-block;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+  display: inline-block;
+}
+.showContent{
+  height: auto;
+}
+.show-more, .show-less {
+	float: left;
+	display: inline;
+	margin-left: 2px;
+	background: #f1f1f1;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 24px;
+}
+.single {
+	text-indent: 26.5px;
+}
+.private {
+	background: #fff6d9;
+}
