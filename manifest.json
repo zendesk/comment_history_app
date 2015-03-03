@@ -6,7 +6,7 @@
     "url": "https://support.zendesk.com"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": "ticket_sidebar",
   "version": "1.0",
   "frameworkVersion": "1.0"
