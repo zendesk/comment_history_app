@@ -215,7 +215,6 @@
 
 		makePrettyDate: function(ISOstring) {
 			var date_obj = new Date(ISOstring);
-			console.log(this.DST(ISOstring));
 			var offset =  this.DST(ISOstring) ? 1 : 0;
 			var year = date_obj.getFullYear().toString();
 			var month = date_obj.getMonth();

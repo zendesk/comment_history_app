@@ -141,3 +141,8 @@ a.dlbtn {
 .private {
 	background: #fff6d9;
 }
+
+#search label.attch {
+	font-size: 100%;
+	margin-right: 50px;
+}
