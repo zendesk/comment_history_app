@@ -122,7 +122,8 @@
 					data: sorted,
 					allBtn: showAll
 				});
-				this.$("#search_input").focus();
+				//this.$("#search_input").focus();
+				//removing jump to search input bug.
 				this.$("a.toolt").tooltip({ html: true});
 			}
 			else if(filter === "") {
@@ -130,7 +131,7 @@
 						data: sorted,
 						allBtn: showAll
 					});
-					this.$("#search_input").focus();
+					//this.$("#search_input").focus();
 					this.$("a.toolt").tooltip({ html: true});
 
 				}
